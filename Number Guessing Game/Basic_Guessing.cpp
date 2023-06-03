@@ -6,17 +6,17 @@ int32_t jyot(){
     cout<<"Select your Number"<<endl;
     srand(time(0));
     int num=rand()%100+1;
-    int k;
-    cin>>k;
+    int guess;
+    cin>>guess;
     int cnt=0;
-    while(num!=k){
-        if(num>k){
+    while(num!=guess){
+        if(num>guess){
             cout<<"Number is quite greater than you thought"<<endl;
         }
         else{
             cout<<"Number is quite smaller than you thought"<<endl;
         }
-        cin>>k;
+        cin>>guess;
         cnt++;
     }            
     cout<<"You Guessed it ryt in "<<cnt<<" Attempts"<<endl;
